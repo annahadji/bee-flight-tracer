@@ -7,7 +7,7 @@ https://github.com/annahadji/bee-flight-tracer/assets/14828356/c05fe27b-75d7-4f2
 BeeFlightTracer can be setup by cloning this repository and installing the dependencies in [requirements.txt](https://github.com/annahadji/bee-flight-tracer/blob/main/requirements.txt) into a (Python) virtual environment. BeeFlightTracer is a small Python project. The following command can be run from the root of the repo,
 
 ```
-(.venv) anna@ms bee-flight-tracer % python exit_angle_tracker.py --help
+(.venv) anna@ms bee-flight-tracer % python trace_flight.py --help
 usage: exit_angle_tracker.py [-h] [--select_dir]
 
 options:
@@ -25,7 +25,7 @@ This will launch the GUI. The following key bindings are available:
 | m                         | Interupts 'live' tracking. Restarts video to track manually (where bee in each frame can be selected). | 
 | q                         | Saves any annotations and quits program. |
 
-The corresponding data directory (source data) and resulting directory for storing the tracking outputs is set in the `overlay_tracks.py`. The parameters of contour filtering can be adjusted in `exit_angle_tracker.py`. 
+The corresponding data directory (source data) and resulting directory for storing the tracking outputs is set in the `overlay_trace.py`. The parameters of contour filtering can be adjusted in `trace_flight.py`. 
 
 The program saves a version of the video with the tracking overlaid, as well as a [`.pkl`](https://docs.python.org/3/library/pickle.html) file with the tracked coordinates and metadata:
 

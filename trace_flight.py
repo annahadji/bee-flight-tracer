@@ -7,7 +7,7 @@ import pickle
 from tkinter import Tk
 from tkinter.filedialog import askopenfilename, askdirectory
 
-from overlay_tracks import (
+from overlay_trace import (
     overlay_tracking_data,
     add_txt_to_frame,
     TRACKING_DIR,
@@ -380,7 +380,7 @@ def track_bee(video_path):
     #     tracking_vid_path.stem + f"-TunnelAlignment{angle:.2f}deg.pkl"
     # ).with_suffix("")
     filename = tracking_vid_path.with_stem(
-        tracking_vid_path.stem + f".pkl"
+        tracking_vid_path.stem + ".pkl"
     ).with_suffix("")    
     with open(f"{filename}", "wb") as f:
         pickle.dump(video_data, f)
@@ -391,7 +391,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--select_dir",
-        help="Select directory of videos rather than an individual file.",
+        help="Select directory of MOV videos rather than an individual file.",
         action="store_true",
     )
     args = parser.parse_args()
