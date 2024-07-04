@@ -1,6 +1,6 @@
 # bee-flight-tracer ✈️ 🐝 
 
-https://github.com/annahadji/bee-flight-tracer/assets/14828356/c05fe27b-75d7-4f2c-aad3-878b7310e6ed
+https://github.com/annahadji/bee-flight-tracer/assets/14828356/077495c5-5869-4920-ba1d-7a5e64542aff
 
 ## Getting started
 
